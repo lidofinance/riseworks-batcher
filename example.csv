@@ -1,0 +1,4 @@
+outgoing_amount,outgoing_token,Description,rest_column
+128,DAI,"Base compensation 0x9DbA9016A773c0Aff81DbD2c608aE9a92bdEf97B",some
+256,DAI,"Base Compensation John Snow Rise: ""0x9DbA9016A773c0Aff81DbD2c608aE9a92bdEf97B""",unused
+512,DAI,0x9DbA9016A773c0Aff81DbD2c608aE9a92bdEf97B,data
