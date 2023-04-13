@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
     api.batch_payment(payments)
 
-    link = f"https://abiscan.io/address/{entity.lower()}#tokentxns"
+    link = f"https://arbiscan.io/address/{entity.lower()}#tokentxns"
     log.info(f"Check explorer for the transaction: [link={link}]{link}[/link]")
 
     log.okay("Done!")
