@@ -2,6 +2,13 @@
 
 ![Screenshot](./screenshot.png)
 
+Setup run: 
+
+```bash
+poetry install
+poetry shell
+```
+
 Usage:
 
 ```bash
