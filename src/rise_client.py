@@ -70,7 +70,7 @@ class TeamMember(TypedDict):
 class RiseAPI:
     """Rise API client"""
 
-     API_BASE = "https://api.riseworks.io/v1"
+    API_BASE = "https://api.riseworks.io/v1"
     # API_BASE = "https://staging-b2b-api.riseworks.io/v1"
 
     AUTH_ENDPOINT = API_BASE + "/auth/api/siwe"
