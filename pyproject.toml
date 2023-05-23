@@ -9,7 +9,7 @@ packages = [{include = "riseworks_batcher"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-requests = "^2.28.2"
+requests = "^2.31.0"
 web3 = "^5.31.3"
 rich = "^13.3.2"
 
