@@ -5,7 +5,7 @@ import random
 from contextlib import suppress
 from dataclasses import asdict, dataclass
 from functools import cache, cached_property
-from typing import Literal, NewType, TypedDict, cast
+from typing import Literal, NewType, Optional, TypedDict, cast
 
 import requests
 from eth_typing.encoding import HexStr
@@ -31,7 +31,7 @@ class Payment:
     recipient: RiseId
     amount: USDCInWei
 
-    salt: int | None = None
+    salt: Optional[int] = None
 
     def __post_init__(self):
         self.salt = random.getrandbits(32)
@@ -70,9 +70,8 @@ class TeamMember(TypedDict):
 class RiseAPI:
     """Rise API client"""
 
-    API_BASE = "https://api.riseworks.io/v1"
-    # API_BASE = "https://staging-b2b-api.riseworks.io/v1"
 
+    API_BASE = "https://api.riseworks.io/v1"
     AUTH_ENDPOINT = API_BASE + "/auth/api/siwe"
     TEAM_ENDPOINT = API_BASE + "/teams/"  # doesn't work without trailing slash
     PAYMNET_ENDPOINT = API_BASE + "/payments"
